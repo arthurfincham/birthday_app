@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'BiotifBlack';
+  src: url('fonts/Biotif-Black.ttf');
+}
+
+@font-face {
+  font-family: 'BiotifBold';
+  src: url('fonts/Biotif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'BiotifBook';
+  src: url('fonts/Biotif-Book.ttf');
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body>* {
+  font-family: "BiotifBook";
+  font-size: 1.5em;
+}
+
+h1 {
+  font-family: 'BiotifBold';
+  font-size: 3em;
+}
+
+.input_form {
+  padding: 2vh;
+}
+
+#name {
+  width: 90%;
+  height: 2vh;
+}
+
+#submit {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-family: "BiotifBook";
+}
