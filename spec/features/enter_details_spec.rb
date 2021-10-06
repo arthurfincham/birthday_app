@@ -8,7 +8,10 @@ feature 'Enter names' do
   scenario 'submitting names' do
     visit('/')
     fill_in :name, with: 'Charlotte'
-    fill_in :date, with: '1997-09-01'
+    page.select '9', from: 'day'
+    expect(page).to have_select('day')
+    page.select 'Jan', from: 'month'
+    expect(page).to have_select('month')
     click_button 'Submit'
   end
 end
