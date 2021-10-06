@@ -32,6 +32,11 @@ h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-family: 'BiotifBold';
+  font-size: 2em;
+}
+
 .input_form {
   padding: 2vh;
 }
@@ -50,4 +55,10 @@ h1 {
 
 input {
   font-family: "BiotifBook";
+}
+
+.results {
+  width: 80vw;
+  height: 40vh;
+  text-align: center;
 }
