@@ -2,6 +2,7 @@
 <% if @calc_days == 365 %>
   <h2><%= "Happy Birthday #{@name} ! " %></h2>
 <% else %>
-  <h2><%= "#{@name}, you have #{@calc_days} days left until your birthday!" %></h2>
+  <h2><%= "#{@name}, you have "%> <%="#{@calc_days}"%> <%=" days left until your birthday!" %></h2>
 <% end %>
 </div>
+

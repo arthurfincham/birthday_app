@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #C5CBE3;
 }
 
 body>* {
@@ -30,11 +31,27 @@ body>* {
 h1 {
   font-family: 'BiotifBold';
   font-size: 3em;
+  color: #4056A1;
+  margin: 2vh;
 }
 
 h2 {
   font-family: 'BiotifBold';
   font-size: 2em;
+  color: #4056A1;
+}
+
+label {
+  color: #4056A1;
+  font-family: 'BiotifBold';
+}
+
+input, select {
+  border: none;
+  background-color: #F1F0EB;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 15px;
 }
 
 .input_form {
@@ -57,8 +74,20 @@ input {
   font-family: "BiotifBook";
 }
 
+#submit input {
+  background-color: #D89922;
+  color: white;
+  text-shadow: 1px 1px #F23C1F;
+}
+
 .results {
   width: 80vw;
   height: 40vh;
   text-align: center;
+}
+
+.index_dec {
+  text-decoration: underline;
+  text-decoration-color: #D89922;
+  text-decoration-thickness: 5px;
 }
