@@ -14,13 +14,15 @@ class Birthday < Sinatra::Base
   end
 
   post '/info' do
-    $user = User.new(params[:name], params[:birthday])
+    $user = User.new(params[:name], params[:day], params[:month])
     redirect '/results'
   end
 
   get '/results' do
     @name = $user.name
-    @birthday = $user.birthday
+    @day = $user.day
+    @month = $user.month
+    @calc_days = $user.calc_days
     erb(:results)
   end
 
