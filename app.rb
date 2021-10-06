@@ -1,8 +1,10 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require './lib/user.rb'
 
 class Birthday < Sinatra::Base
-  
+  enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
@@ -11,8 +13,16 @@ class Birthday < Sinatra::Base
     erb(:index)
   end
 
-  get '/secret' do
-    "qw4erqerfg"
+  post '/info' do
+    $user = User.new(params[:name], params[:birthday])
+    redirect '/results'
   end
-run! if app_file == $0
+
+  get '/results' do
+    @name = $user.name
+    @birthday = $user.birthday
+    erb(:results)
+  end
+
+  run! if app_file == $0
 end
