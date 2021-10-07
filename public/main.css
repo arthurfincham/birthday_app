@@ -39,6 +39,7 @@ h2 {
   font-family: 'BiotifBold';
   font-size: 2em;
   color: #4056A1;
+  display: inline;
 }
 
 label {
@@ -78,6 +79,7 @@ input {
   background-color: #D89922;
   color: white;
   text-shadow: 1px 1px #F23C1F;
+  font-size: large;
 }
 
 .results {
@@ -86,8 +88,17 @@ input {
   text-align: center;
 }
 
-.index_dec {
+#daysleft {
   text-decoration: underline;
   text-decoration-color: #D89922;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 10px;
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+
+.birthday {
+  display: inline-block;
+  animation: flash;
+  animation-duration: 1s;
 }
