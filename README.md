@@ -4,9 +4,6 @@
 
 <img src="public/images/birthdayapp.gif" width="600px">
 
-&nbsp;
-
-
 ![](https://img.shields.io/github/last-commit/arthurfincham/birthday_app)
 ![](https://img.shields.io/github/languages/count/arthurfincham/birthday_app)
 ![](https://img.shields.io/github/languages/code-size/arthurfincham/birthday_app)
