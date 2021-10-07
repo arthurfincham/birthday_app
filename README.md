@@ -25,7 +25,7 @@
 </div>
 
 ## Install
-Try it out in your browser [here]().
+Try it out in your browser [here](https://birthday--app.herokuapp.com).
 
 Or to install:
 ``` bash
