@@ -56,6 +56,7 @@ GEM
     sinatra-reloader (1.0)
       sinatra-contrib
     tilt (2.0.10)
+    timecop (0.9.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -68,6 +69,7 @@ DEPENDENCIES
   rspec
   sinatra
   sinatra-reloader (~> 1.0)
+  timecop
 
 BUNDLED WITH
    2.2.26
