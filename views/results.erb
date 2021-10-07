@@ -1,5 +1,5 @@
 <div class="results">
-<% if @calc_days == 365 %>
+<% if @calc_days == 0 %>
   <h2 class="birthday"><%= "Happy Birthday #{@name} ! " %></h2>
 <% else %>
   <h2><%= "#{@name}, you have "%></h2><h2 id="daysleft"><%="#{@calc_days}"%></h2><h2><%=" days left until your birthday!" %></h2>

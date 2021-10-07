@@ -22,6 +22,6 @@ class Saver
     if start_date > end_date
       end_date = DateTime.new(2022, @month, @day)
     end
-    @calc_days = (start_date..end_date).count
+    @calc_days = (start_date..end_date).count - 1
   end
 end
